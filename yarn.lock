@@ -636,6 +636,17 @@
     lodash "^4.17.4"
     react-native-vector-icons "4.5.0"
 
+"@expo/websql@^1.0.1":
+  version "1.0.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/@expo/websql/-/websql-1.0.1.tgz#fff0cf9c1baa1f70f9e1d658b7c39a420d9b10a9"
+  integrity sha1-//DPnBuqH3D54dZYt8OaQg2bEKk=
+  dependencies:
+    argsarray "^0.0.1"
+    immediate "^3.2.2"
+    noop-fn "^1.0.0"
+    pouchdb-collections "^1.0.1"
+    tiny-queue "^0.2.1"
+
 "@segment/loosely-validate-event@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@segment/loosely-validate-event/-/loosely-validate-event-1.1.2.tgz#d77840999e3f7e43e74b3b0d43391c1526f793b8"
@@ -1195,7 +1206,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@^22.4.1, babel-jest@^22.4.4:
+babel-jest@^22.4.2, babel-jest@^22.4.4:
   version "22.4.4"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-22.4.4.tgz#977259240420e227444ebe49e226a61e49ea659d"
   dependencies:
@@ -3095,28 +3106,305 @@ expect@^22.4.0:
     jest-message-util "^22.4.3"
     jest-regex-util "^22.4.3"
 
-expo@27.0.1:
-  version "27.0.1"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-27.0.1.tgz#556a37121282f4509b0821d8d4e7c8a8da0c11d8"
+expo-ads-admob@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-ads-admob/-/expo-ads-admob-1.0.0.tgz#4debb00d90a584d06124a6de7fd8e89fef5385f5"
+  integrity sha1-TeuwDZClhNBhJKbef9jon+9ThfU=
+  dependencies:
+    prop-types "^15.6.2"
+
+expo-analytics-segment@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-analytics-segment/-/expo-analytics-segment-1.0.0.tgz#d5d46cf276c94f69e39a5251e8b424d64f661a37"
+  integrity sha1-1dRs8nbJT2njmlJR6LQk1k9mGjc=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-asset@~1.1.0:
+  version "1.1.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-asset/-/expo-asset-1.1.1.tgz#f1957b39a120bd9177f1fad9b8e2a20dd3746e86"
+  integrity sha1-8ZV7OaEgvZF38frZuOKiDdN0boY=
+  dependencies:
+    expo-core "~1.2.0"
+    uri-parser "^1.0.1"
+    url-join "^4.0.0"
+
+expo-barcode-scanner-interface@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-barcode-scanner-interface/-/expo-barcode-scanner-interface-1.0.0.tgz#3b61227c8ee131871ab6d6a199384caad8f90510"
+  integrity sha1-O2EifI7hMYcattahmThMqtj5BRA=
+
+expo-barcode-scanner@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-barcode-scanner/-/expo-barcode-scanner-1.0.0.tgz#fa59a67b34b2179c565246ac61c4de5e0d20b050"
+  integrity sha1-+lmmezSyF5xWUkasYcTeXg0gsFA=
+  dependencies:
+    expo-barcode-scanner-interface "~1.0.0"
+    lodash.mapvalues "^4.6.0"
+    prop-types "^15.6.0"
+
+expo-camera-interface@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-camera-interface/-/expo-camera-interface-1.0.2.tgz#228f035ddb2960d4a62f1875f13ffe92fb65110c"
+  integrity sha1-Io8DXdspYNSmLxh18T/+kvtlEQw=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-camera@~1.1.0:
+  version "1.1.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-camera/-/expo-camera-1.1.1.tgz#6fc5375a9ff8acc9ebb6712cc21f3e2d6f1a4af7"
+  integrity sha1-b8U3Wp/4rMnrtnEswh8+LW8aSvc=
+  dependencies:
+    expo-barcode-scanner-interface "~1.0.0"
+    expo-camera-interface "~1.0.2"
+    expo-core "~1.1.0"
+    expo-face-detector-interface "~1.0.2"
+    expo-file-system-interface "~1.0.2"
+    expo-permissions-interface "~1.1.0"
+    lodash.mapvalues "^4.6.0"
+    prop-types "^15.6.0"
+
+expo-constants-interface@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-constants-interface/-/expo-constants-interface-1.0.2.tgz#94970e15ec0a41df4750c6e2c2af416cb8a6471c"
+  integrity sha1-lJcOFewKQd9HUMbiwq9BbLimRxw=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-constants@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-constants/-/expo-constants-1.0.2.tgz#2b9f96bb26d5d20df60368a66c5a5f237c9659f3"
+  integrity sha1-K5+WuybV0g32A2imbFpfI3yWWfM=
+  dependencies:
+    expo-constants-interface "~1.0.2"
+    expo-core "~1.1.0"
+
+expo-contacts@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-contacts/-/expo-contacts-1.0.0.tgz#07510f3d62c8ffa90c8161884b872f816e1ab42a"
+  integrity sha1-B1EPPWLI/6kMgWGIS4cvgW4atCo=
+  dependencies:
+    expo-core "~1.1.0"
+    uuid-js "^0.7.5"
+
+expo-core@~1.1.0:
+  version "1.1.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-core/-/expo-core-1.1.0.tgz#c6c81282cc33b7de3913e5c3e46462b8e8f733ec"
+  integrity sha1-xsgSgswzt945E+XD5GRiuOj3M+w=
+
+expo-core@~1.2.0:
+  version "1.2.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-core/-/expo-core-1.2.0.tgz#c8fecf18b36a5b583bcb69a0227d4a6e45b56f17"
+  integrity sha1-yP7PGLNqW1g7y2mgIn1KbkW1bxc=
+
+expo-face-detector-interface@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-face-detector-interface/-/expo-face-detector-interface-1.0.2.tgz#4b193c81de335f0e584ec5dff021cec1979277da"
+  integrity sha1-Sxk8gd4zXw5YTsXf8CHOwZeSd9o=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-face-detector@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-face-detector/-/expo-face-detector-1.0.2.tgz#8133e422d98f515e058c82f1eff3433d040aab35"
+  integrity sha1-gTPkItmPUV4FjILx7/NDPQQKqzU=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-face-detector-interface "~1.0.2"
+    expo-permissions-interface "~1.1.0"
+
+expo-file-system-interface@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-file-system-interface/-/expo-file-system-interface-1.0.2.tgz#7803a9a776fd9aa1b22151ff5eb404c77fbd92f7"
+  integrity sha1-eAOpp3b9mqGyIVH/XrQEx3+9kvc=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-file-system@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-file-system/-/expo-file-system-1.0.2.tgz#5e101296edd21b2dc9afa9ff1fe981ea3905ccb8"
+  integrity sha1-XhASlu3SGy3Jr6n/H+mB6jkFzLg=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-file-system-interface "~1.0.2"
+    uuid-js "^0.7.5"
+
+expo-font-interface@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-font-interface/-/expo-font-interface-1.0.0.tgz#8e6d4b305499b30405ae425458a976359cdc0c10"
+  integrity sha1-jm1LMFSZswQFrkJUWKl2NZzcDBA=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-font@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-font/-/expo-font-1.0.0.tgz#853a78820a857c1979d26a6414589b1bfe275a31"
+  integrity sha1-hTp4ggqFfBl50mpkFFibG/4nWjE=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-font-interface "~1.0.0"
+    invariant "^2.2.2"
+
+expo-gl-cpp@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-gl-cpp/-/expo-gl-cpp-1.0.2.tgz#5d1d22325065e80664491a79383674c914b2d034"
+  integrity sha1-XR0iMlBl6AZkSRp5ODZ0yRSy0DQ=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-gl@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-gl/-/expo-gl-1.0.2.tgz#730811ab43b25ec68a8ebee036292589238342e0"
+  integrity sha1-cwgRq0OyXsaKjr7gNikliSODQuA=
+  dependencies:
+    expo-camera-interface "~1.0.2"
+    expo-core "~1.1.0"
+    expo-file-system-interface "~1.0.2"
+    expo-gl-cpp "~1.0.2"
+
+expo-image-loader-interface@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-image-loader-interface/-/expo-image-loader-interface-1.0.0.tgz#77249526b81acc85116bfc36200d1accefb3f6d2"
+  integrity sha1-dySVJrgazIURa/w2IA0azO+z9tI=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-local-authentication@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-local-authentication/-/expo-local-authentication-1.0.0.tgz#c21d2cbe2d25bab5cdd05e6d38a41f9ba0615eeb"
+  integrity sha1-wh0svi0lurXN0F5tOKQfm6BhXus=
+  dependencies:
+    expo-core "~1.1.0"
+    invariant "^2.2.4"
+
+expo-location@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-location/-/expo-location-1.0.0.tgz#98dab207fab7a8834abd1916df4f8534b4eccb02"
+  integrity sha1-mNqyB/q3qINKvRkW30+FNLTsywI=
+  dependencies:
+    invariant "^2.2.4"
+
+expo-media-library@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-media-library/-/expo-media-library-1.0.0.tgz#af2b0c5b624e28541856e524ec876a014cd055c7"
+  integrity sha1-rysMW2JOKFQYVuUk7IdqAUzQVcc=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-permissions-interface "~1.1.0"
+
+expo-payments-stripe@~1.0.0:
+  version "1.0.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-payments-stripe/-/expo-payments-stripe-1.0.1.tgz#feeb33fc8cfce692dafeffcca5c518dff82bc2d5"
+  integrity sha1-/usz/Iz85pLa/v/MpcUY3/grwtU=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-permissions-interface@~1.1.0:
+  version "1.1.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-permissions-interface/-/expo-permissions-interface-1.1.0.tgz#82aa821466d421a7fa261dfc70e74320832f6307"
+  integrity sha1-gqqCFGbUIaf6Jh38cOdDIIMvYwc=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-permissions@~1.1.0:
+  version "1.1.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-permissions/-/expo-permissions-1.1.0.tgz#45dbeea680c1065d13aa451a41ab3af46fd34e67"
+  integrity sha1-RdvupoDBBl0TqkUaQas69G/TTmc=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-permissions-interface "~1.1.0"
+
+expo-print@~1.0.0:
+  version "1.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-print/-/expo-print-1.0.0.tgz#dacc797614c5062d003dc29cc4da67d661ed3f9f"
+  integrity sha1-2sx5dhTFBi0APcKcxNpn1mHtP58=
+  dependencies:
+    babel-preset-expo "^4.0.0"
+    expo-core "~1.1.0"
+
+expo-react-native-adapter@~1.1.1:
+  version "1.1.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-react-native-adapter/-/expo-react-native-adapter-1.1.1.tgz#a8a4bcd8d17323924aac991ac727e9bcab9da6e1"
+  integrity sha1-qKS82NFzI5JKrJkaxyfpvKudpuE=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-image-loader-interface "~1.0.0"
+    expo-permissions-interface "~1.1.0"
+    lodash.omit "^4.5.0"
+    lodash.pick "^4.4.0"
+    prop-types "^15.6.1"
+
+expo-sensors-interface@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-sensors-interface/-/expo-sensors-interface-1.0.2.tgz#522ce6724409000ae6fd05c8775163089342ea09"
+  integrity sha1-UizmckQJAArm/QXId1FjCJNC6gk=
+  dependencies:
+    expo-core "~1.1.0"
+
+expo-sensors@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-sensors/-/expo-sensors-1.0.2.tgz#bdfe10ab0b25c64cc1c40bdf6cd3f0899f07c860"
+  integrity sha1-vf4QqwslxkzBxAvfbNPwiZ8HyGA=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-sensors-interface "~1.0.2"
+    invariant "^2.2.4"
+
+expo-sms@~1.0.2:
+  version "1.0.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo-sms/-/expo-sms-1.0.2.tgz#9856b4fbd2c6c62de14a5a3213c1d67aad46d72d"
+  integrity sha1-mFa0+9LGxi3hSloyE8HWeq1G1y0=
+  dependencies:
+    expo-core "~1.1.0"
+    expo-permissions-interface "~1.1.0"
+
+expo@30.0.1:
+  version "30.0.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/expo/-/expo-30.0.1.tgz#2fae2d20b2f71d90e9533030d3671f70d4a18814"
+  integrity sha1-L64tILL3HZDpUzAw02cfcNShiBQ=
   dependencies:
     "@expo/vector-icons" "^6.3.1"
+    "@expo/websql" "^1.0.1"
     babel-preset-expo "^4.0.0"
+    expo-ads-admob "~1.0.0"
+    expo-analytics-segment "~1.0.0"
+    expo-asset "~1.1.0"
+    expo-barcode-scanner "~1.0.0"
+    expo-camera "~1.1.0"
+    expo-constants "~1.0.2"
+    expo-contacts "~1.0.0"
+    expo-core "~1.1.0"
+    expo-face-detector "~1.0.2"
+    expo-file-system "~1.0.2"
+    expo-font "~1.0.0"
+    expo-gl "~1.0.2"
+    expo-local-authentication "~1.0.0"
+    expo-location "~1.0.0"
+    expo-media-library "~1.0.0"
+    expo-payments-stripe "~1.0.0"
+    expo-permissions "~1.1.0"
+    expo-print "~1.0.0"
+    expo-react-native-adapter "~1.1.1"
+    expo-sensors "~1.0.2"
+    expo-sms "~1.0.2"
     fbemitter "^2.1.1"
     invariant "^2.2.2"
     lodash.map "^4.6.0"
     lodash.omit "^4.5.0"
     lodash.zipobject "^4.1.3"
-    lottie-react-native "2.3.2"
+    lottie-react-native "2.5.0"
     md5-file "^3.2.3"
     pretty-format "^21.2.1"
     prop-types "^15.6.0"
     qs "^6.5.0"
-    react-native-branch "2.0.0-beta.3"
-    react-native-gesture-handler "1.0.0-alpha.41"
+    react-native-branch "2.2.5"
+    react-native-gesture-handler "1.0.6"
     react-native-maps "0.21.0"
+    react-native-reanimated "1.0.0-alpha.6"
+    react-native-screens "^1.0.0-alpha.5"
     react-native-svg "6.2.2"
     uuid-js "^0.7.5"
-    websql "https://github.com/expo/node-websql/archive/18.0.0.tar.gz"
+    whatwg-fetch "^2.0.4"
 
 express@^4.13.4, express@^4.14.0:
   version "4.16.3"
@@ -4017,7 +4305,7 @@ instapromise@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/instapromise/-/instapromise-2.0.7.tgz#85e66b31021194da11214c865127ef04ec30167a"
 
-invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2:
+invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -4494,11 +4782,12 @@ jest-environment-node@^22.4.1:
     jest-mock "^22.4.3"
     jest-util "^22.4.3"
 
-jest-expo@27.0.0:
-  version "27.0.0"
-  resolved "https://registry.yarnpkg.com/jest-expo/-/jest-expo-27.0.0.tgz#9afb4c6271493a68d137a10ac9e12e81773924b4"
+jest-expo@30.0.0:
+  version "30.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/jest-expo/-/jest-expo-30.0.0.tgz#31a540034846d99c65830ae292d4e8bff53c321e"
+  integrity sha1-MaVAA0hG2ZxlgwriktTov/U8Mh4=
   dependencies:
-    babel-jest "^22.4.1"
+    babel-jest "^22.4.2"
     jest "^22.4.2"
     json5 "^0.5.1"
     react-test-renderer "^16.3.1"
@@ -4718,6 +5007,11 @@ js-sha3@^0.3.1:
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
+
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
 
 js-yaml@^3.7.0:
   version "3.12.0"
@@ -4962,6 +5256,11 @@ lodash.map@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
 
+lodash.mapvalues@^4.6.0:
+  version "4.6.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz#1bafa5005de9dd6f4f26668c30ca37230cc9689c"
+  integrity sha1-G6+lAF3p3W9PJmaMMMo3IwzJaJw=
+
 lodash.omit@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
@@ -4981,6 +5280,11 @@ lodash.padend@^4.1.0:
 lodash.padstart@^4.1.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.padstart/-/lodash.padstart-4.6.1.tgz#d2e3eebff0d9d39ad50f5cbd1b52a7bce6bb611b"
+
+lodash.pick@^4.4.0:
+  version "4.4.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
+  integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -5020,16 +5324,25 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   dependencies:
     js-tokens "^3.0.0"
 
-lottie-ios@^2.1.5:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-2.5.0.tgz#55c808e785d4a6933b0c10b395530b17098b05de"
+loose-envify@^1.4.0:
+  version "1.4.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
 
-lottie-react-native@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/lottie-react-native/-/lottie-react-native-2.3.2.tgz#c9b751e1c121708cd6f50f7770cb5aa0e1042a29"
+lottie-ios@^2.5.0:
+  version "2.5.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/lottie-ios/-/lottie-ios-2.5.0.tgz#55c808e785d4a6933b0c10b395530b17098b05de"
+  integrity sha1-VcgI54XUppM7DBCzlVMLFwmLBd4=
+
+lottie-react-native@2.5.0:
+  version "2.5.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/lottie-react-native/-/lottie-react-native-2.5.0.tgz#0711b8b34bec7741552c24b71efd3d4cab347571"
+  integrity sha1-BxG4s0vsd0FVLCS3Hv09TKs0dXE=
   dependencies:
     invariant "^2.2.2"
-    lottie-ios "^2.1.5"
+    lottie-ios "^2.5.0"
     prop-types "^15.5.10"
     react-native-safe-module "^1.1.0"
 
@@ -6173,6 +6486,15 @@ prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.6.1, prop-types@^15.6.2:
+  version "15.7.2"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
+
 proxy-addr@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.3.tgz#355f262505a621646b3130a728eb647e22055341"
@@ -6344,13 +6666,20 @@ react-is@^16.3.1, react-is@^16.4.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
 
-react-native-branch@2.0.0-beta.3:
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.0.0-beta.3.tgz#2167af86bbc9f964bd45bd5f37684e5b54965e32"
+react-is@^16.8.1:
+  version "16.8.4"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
+  integrity sha1-kPM2pow6KaCWo9ZIq4DofsYUgqI=
 
-react-native-gesture-handler@1.0.0-alpha.41:
-  version "1.0.0-alpha.41"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.0-alpha.41.tgz#5667a1977ab148339ec2e7b0a94ad4b959cf09e5"
+react-native-branch@2.2.5:
+  version "2.2.5"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
+  integrity sha1-QHTdY7SXPmOX2c5Q6XtXx3pRjp0=
+
+react-native-gesture-handler@1.0.6:
+  version "1.0.6"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-native-gesture-handler/-/react-native-gesture-handler-1.0.6.tgz#8a672ca0c7a1b706dffee4e230e5cf0197d2cdb8"
+  integrity sha1-imcsoMehtwbf/uTiMOXPAZfSzbg=
   dependencies:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
@@ -6363,11 +6692,21 @@ react-native-maps@0.21.0:
     babel-plugin-module-resolver "^2.3.0"
     babel-preset-react-native "1.9.0"
 
+react-native-reanimated@1.0.0-alpha.6:
+  version "1.0.0-alpha.6"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-native-reanimated/-/react-native-reanimated-1.0.0-alpha.6.tgz#169d23b3b39d1c88e509ddc97027b1c8cc066da8"
+  integrity sha1-Fp0js7OdHIjlCd3JcCexyMwGbag=
+
 react-native-safe-module@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-module/-/react-native-safe-module-1.2.0.tgz#a23824ca24edc2901913694a76646475113d570d"
   dependencies:
     dedent "^0.6.0"
+
+react-native-screens@^1.0.0-alpha.5:
+  version "1.0.0-alpha.22"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-native-screens/-/react-native-screens-1.0.0-alpha.22.tgz#7a120377b52aa9bbb94d0b8541a014026be9289b"
+  integrity sha1-ehIDd7Uqqbu5TQuFQaAUAmvpKJs=
 
 react-native-scripts@1.14.0:
   version "1.14.0"
@@ -6405,9 +6744,10 @@ react-native-vector-icons@4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native@0.55.2:
-  version "0.55.2"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.55.2.tgz#80d26a3f4193ebd1fd49a4859011c501b0ca3bab"
+react-native@0.55.4:
+  version "0.55.4"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/react-native/-/react-native-0.55.4.tgz#eecffada3750a928e2ddd07cf11d857ae9751c30"
+  integrity sha1-7s/62jdQqSji3dB88R2Feul1HDA=
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
@@ -7800,6 +8140,11 @@ upper-case@^1.0.3, upper-case@^1.1.0, upper-case@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/upper-case/-/upper-case-1.1.3.tgz#f6b4501c2ec4cdd26ba78be7222961de77621598"
 
+uri-parser@^1.0.1:
+  version "1.0.1"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/uri-parser/-/uri-parser-1.0.1.tgz#3307ebb50f279c11198ad09214bdaf24e29735b2"
+  integrity sha1-MwfrtQ8nnBEZitCSFL2vJOKXNbI=
+
 urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
@@ -7807,6 +8152,11 @@ urix@^0.1.0:
 url-join@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
+
+url-join@^4.0.0:
+  version "4.0.0"
+  resolved "https://globaldevtools.bbva.com:443/artifactory/api/npm/npm-repo/url-join/-/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
+  integrity sha1-TTNA6AfTdzvamZH4MFrNzCpmXSo=
 
 url-parse-lax@^1.0.0:
   version "1.0.0"
@@ -8156,23 +8506,13 @@ webidl-conversions@^4.0.2:
     typedarray-to-buffer "^3.1.2"
     yaeti "^0.0.6"
 
-"websql@https://github.com/expo/node-websql/archive/18.0.0.tar.gz":
-  version "0.4.4"
-  resolved "https://github.com/expo/node-websql/archive/18.0.0.tar.gz#39b12a08b0180495de1412d8a64a529e21ad554e"
-  dependencies:
-    argsarray "^0.0.1"
-    immediate "^3.2.2"
-    noop-fn "^1.0.0"
-    pouchdb-collections "^1.0.1"
-    tiny-queue "^0.2.1"
-
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-encoding/-/whatwg-encoding-1.0.3.tgz#57c235bc8657e914d24e1a397d3c82daee0a6ba3"
   dependencies:
     iconv-lite "0.4.19"
 
-whatwg-fetch@>=0.10.0:
+whatwg-fetch@>=0.10.0, whatwg-fetch@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
 
